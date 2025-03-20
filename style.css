@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width: 95%;
+    text-align: center;
+    padding: 1.5em;
+    border: 2px solid;
+    margin: 0 auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #7765A9;
+}
+
+body{
+    background-color: #EAE6DA;
+}
+
+#main_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1{
+    font-size: 3.5rem;
+    color: #F5F5F5;
+}
+
+header #skill_tags{
+    font-size: 1.5rem;
+    color: #E0E0E0;
+}
+
+header p{
+    padding: .8rem;
+}
+
+#email{
+    font-size: 1.5rem;
+    color: #E4B363;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#email:hover{
+    color: #e8c67b;
+}
+#email:active{
+    color: #e3ca9d;
+}
+
+#socials i{
+    font-size: 2rem;
+    padding: .5rem;
+    cursor: pointer;
+    color: #E4B363;
+}
+#socials i:hover{
+    color: #e8c67b;
+}
+#socials i:active{
+    color: #e3ca9d;
+}
+
+#down_arrow{
+    border: 2px solid;
+    width: 100%;
+}
+
+#about_arrow{
+    margin: 0 auto;
+    width: 95%;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: .5rem;
+    cursor: pointer;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #7765A9;
+}
+
+#about_arrow i, #about_arrow p{
+    color: #E0E0E0;
+}
+
+#about_arrow p{
+    display: inline;
+}
+#about_arrow:hover{
+    background-color: #725db8;
+}
+
+#category_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5rem;
+}
+
+.category{
+    border: 1px solid black;
+    text-align: center;
+    padding: 1.5em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    width: 25%;
+    background-color: #D6D1C4;
+}
+
+.category .category_head{
+    font-size: 2rem;
+}
+
+.category p, .category i{
+    font-size: 1.5rem;
+    padding: 1em;
+}
