@@ -23,10 +23,17 @@
         </div>
     </header>
 <main>
+    <div id="about_me">
+        Hello World This is Content About Me
+    </div>
     <div id="about_arrow">
-        <i class="fa-solid fa-angle-down"></i>
-        <p>About Me</p>
-        <i class="fa-solid fa-angle-down"></i>
+        <button onclick="toggleAboutSection()">
+            <i class="fa-solid fa-angle-down"></i>
+            <i class="fa-solid fa-angle-up"></i>
+            <p>About Me</p>
+            <i class="fa-solid fa-angle-up"></i>
+            <i class="fa-solid fa-angle-down"></i>
+        </button>
     </div>
 
     <div id="category_container">
@@ -58,5 +65,7 @@
         </div>
     </div>
 </main>
+
+<script src="script.js"></script>
 </body>
 </html>

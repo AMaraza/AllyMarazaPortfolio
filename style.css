@@ -72,12 +72,35 @@ header p{
     width: 100%;
 }
 
+#about_me{
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+    padding: 1em;
+    display: none;
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
+
 #about_arrow{
     margin: 0 auto;
     width: 95%;
     border-left: 2px solid;
     border-right: 2px solid;
     border-bottom: 2px solid;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #7765A9;
+}
+
+#about_arrow button{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    border: none;
     font-size: 1.5rem;
     text-align: center;
     padding: .5rem;
@@ -89,6 +112,10 @@ header p{
 
 #about_arrow i, #about_arrow p{
     color: #E0E0E0;
+}
+
+.fa-solid.fa-angle-up{
+    display: none;
 }
 
 #about_arrow p{
