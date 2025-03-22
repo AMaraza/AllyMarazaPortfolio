@@ -90,8 +90,8 @@ header p{
 }
 
 #about_me.open {
-    max-height: 1500px; /* Adjust to your content size */
-    padding: 1em; /* Add padding when expanded */
+    max-height: 1500px;
+    padding: 1em;
 }
 
 #about_me #summary{
