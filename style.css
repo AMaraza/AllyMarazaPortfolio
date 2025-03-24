@@ -273,6 +273,9 @@ header p{
 .category.expand .project{
     display: block;
 }
+.category.expand_inactive{
+    animation: expand_inactive 1s forwards;
+}
 
 .project_content{
     display: flex;
@@ -287,6 +290,12 @@ header p{
     width: 50%;
 }
 
+.project_content video{
+    border: 2px solid;
+    border-radius: 15px;
+    width: 50%;
+}
+
 .description_content{
     text-align: left;
     padding: 2em;
@@ -294,12 +303,12 @@ header p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 45%;
+    width: 50%;
 }
 
 .description_content p{
     margin: .5em;
-    font-size: 1rem !important;
+    font-size: 1.5rem !important;
 }
 
 .description_content button{
@@ -307,7 +316,7 @@ header p{
     width: 100%;
     border-radius: 15px;
     background-color: #E4B363;
-    color: #EAEAEA;
+    color: #2B2A33;
     cursor: pointer;
     font-weight: bold;
 }
@@ -318,7 +327,7 @@ header p{
 .tech_stack{
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 1em;
+    padding: .5em;
 }
 
 .stack_tags{
@@ -327,12 +336,12 @@ header p{
     align-items: center;
 }
 .stack_tags div{
-    border: 1px solid;
     padding: .5em;
     border-radius: 10px;
     margin: 0 1em;
-    background-color: #5F5574;
+    background-color: #3B3B58;
     color: #F2E9D8;
+    border: 1px solid #2E2E48;
 }
 
 .description a{
@@ -358,6 +367,15 @@ header p{
     100% {
         width: 25%;
         height: auto;
+    }
+}
+
+@keyframes expand_inactive{
+    0%{
+        width: 25%;
+    }
+    100%{
+        width: 95%;
     }
 }
 

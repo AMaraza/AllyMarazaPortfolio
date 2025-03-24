@@ -13,7 +13,7 @@
     <header>
         <div id="main_content">
             <h1>Ally Maraza</h1>
-            <p id="skill_tags">Game Designer - C++ Programmer - Front End Web Developer</p>
+            <p id="skill_tags">Front-End Web Developer - Game Designer - C++ Programmer</p>
             <a onclick="copyToClipboard()"><p id="email">allymaraza@outlook.com</p></a>
             <div id="socials">
                 <a href="https://www.linkedin.com/in/ally-maraza/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -26,7 +26,7 @@
     <div id="about_me">
         <div id="summary">
             <h2>Who Am I</h2>
-            <p>I’m a <b>C++ developer, front-end web developer, and tabletop game designer</b> who enjoys building practical, hands-on projects.</p>
+            <p>I’m a <b>Front-End Web Developer, Tabletop Game Designer, and C++ Programmer</b> who enjoys building practical, hands-on projects.</p>
             <p>I started in game design with Unreal Engine and Blueprints, where I learned to create interactive systems and dynamic experiences. Now, I’m working toward becoming a full-stack developer—combining my coding knowledge with user-focused design to build responsive websites and applications.</p>
             <p>One of my top achievements is successfully launching a tabletop game on Kickstarter. That process taught me a lot about project management, creative thinking, and what it takes to turn an idea into something real.</p>
             <hr>
@@ -34,8 +34,7 @@
         <div id="skills">
             <h2>Skills</h2>
             <div id="languages"><div class="skill">C++</div><div class="skill">HTML</div><div class="skill">CSS</div><div class="skill">JavaScript</div><div></div></div>
-            <div id="programming_tech"><div class="skill">Linux</div><div class="skill">Terminal</div><div class="skill">Github/Github CLI</div><div class="skill">Perforce</div><div class="skill">Vim</div></div>
-            <div id="tabletop_skills"><div class="skill">Photoshop</div><div class="skill">Marketing</div><div class="skill">Prototyping</div><div class="skill">Manufacturing</div></div>
+            <div id="programming_tech"><div class="skill">Linux</div><div class="skill">Terminal</div><div class="skill">Github/Git CLI</div><div class="skill">Perforce</div><div class="skill">Vim</div></div>
         </div>
         <div id="education">
             <h2>Education</h2>
@@ -58,15 +57,14 @@
     <div id="category_container">
         <div class="category" id="web_dev">
             <p class="category_head">Web Development</p>
-            <p class="description">1 Project</p>
+            <p class="description">3 Projects</p>
             <div class="project" id="web_project1">
                 <p><b>Three Season Studios</b></p>
                 <div class="project_content">
-                    <img src="images/ThreeSeasonStudios.png" alt="Gif of three season studios homepage being navigated">
+                    <img src="images/ThreeSeasonStudios.png" alt="Image of three season studios homepage">
                     <div class="description_content">
-                        <p>This WIP website is designed by me to serve as the website for my indie tabletop game studio.</p>
-                        <p>The project incorporates HTML, CSS, and a little bit of javascript for a basic image carousel allowing you to cycle through images with arrows or radio buttons, while also having the images auto cycle every few seconds.</p>
-                        <p>Right now the site is only the home page. The other pages will be coming soon, as well as functionality for the newsletter box at the bottom, and a mobile friendly layout.</p>
+                        <p>This WIP website is designed to serve as the website for my indie tabletop game studio.</p>
+                        <p>The project incorporates javascript for a basic image carousel allowing you to cycle through images with arrows or radio buttons, while also having the images auto cycle every few seconds.</p>
                         <a href="https://amaraza.github.io/ThreeSeasonStudios/" target="_blank"><button>Visit Website</button></a>
 
                         <h3 class="tech_stack">Tech Stack</h3>
@@ -74,28 +72,42 @@
                     </div>
                 </div>
             </div>
-            <div class="down_arrow">
-                <i class="fa-solid fa-angle-down"></i>
-                <i class="fa-solid fa-angle-down"></i>
+            <div class="project" id="web_project2">
+                <p><b>Hiking Site</b></p>
+                <div class="project_content">
+                    <img src="images/HikingSite.png" alt="Image of hiking site homepage">
+                    <div class="description_content">
+                        <p>This website showcases photos and stats from a 2 day hiking trip I took.</p>
+                        <p>This project was my first introduction to CSS flex box, and also incorporates some basic Javascript to change the units for the statistics from Metric to Imperial.</p>
+                        <a href="https://amaraza.github.io/HikingSite/index.html" target="_blank"><button>Visit Website</button></a>
+                        <h3 class="tech_stack">Tech Stack</h3>
+                        <div class="stack_tags"><div>HTML</div><div>CSS</div><div>Javascript</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="project" id="web_project3">
+                <p><b>Hangman</b></p>
+                <div class="project_content">
+                    <video src="images/Hangman.mp4" autoplay muted loop></video>
+                    <div class="description_content">
+                        <p>This website is a simple Hangman game. The game picks randomly from a list of words, and breaks it down into characters to compare against user input.</p>
+                        <p>This project was mostly Javascript fundamentals, and this was my first experience with DOM Manipulation.</p>
+                        <a href="https://amaraza.github.io/HikingSite/index.html" target="_blank"><button>Visit Website</button></a>
+                        <h3 class="tech_stack">Tech Stack</h3>
+                        <div class="stack_tags"><div>HTML</div><div>CSS</div><div>Javascript</div></div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="category" id="tabletop">
             <p class="category_head">Tabletop Games</p>
             <p class="description">0 Projects</p>
-            <div class="down_arrow">
-                <i class="fa-solid fa-angle-down"></i>
-                <i class="fa-solid fa-angle-down"></i>
-            </div>
         </div>
 
         <div class="category" id="cpp">
             <p class="category_head">C++ Development</p>
             <p class="description">0 Projects</p>
-            <div class="down_arrow">
-                <i class="fa-solid fa-angle-down"></i>
-                <i class="fa-solid fa-angle-down"></i>
-            </div>
         </div>
     </div>
 </main>
