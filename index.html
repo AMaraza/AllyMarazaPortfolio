@@ -10,145 +10,131 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div id="main_content">
-            <h1>Ally Maraza</h1>
-            <p id="skill_tags">Front-End Web Developer - Game Designer - C++ Programmer</p>
-            <a onclick="copyToClipboard()"><p id="email">allymaraza@outlook.com</p></a>
-            <div id="socials">
-                <a href="https://www.linkedin.com/in/ally-maraza/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/AMaraza" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href=""><i class="fa-solid fa-file-pdf"></i></a>
-            </div>
+
+<header>
+    <aside class="contact">
+        <p><u>allymaraza@outlook.com</u></p>
+    </aside>
+    <section class="personal-info">
+        <h1>Ally Maraza</h1>
+        <h3>Front-End Web Developer | Game Designer | C++ Programmer</h3>
+    </section>
+    <aside class="contact">
+        <div class="social-links">
+            <a class="socials" href="https://www.linkedin.com/in/ally-maraza/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="socials" href="https://github.com/AMaraza" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a class="socials" href=""><i class="fa-solid fa-file-pdf"></i></a>
         </div>
-    </header>
+    </aside>
+</header>
+
 <main>
-    <div id="about_me">
-        <div id="summary">
-            <h2>Who Am I</h2>
-            <p>I’m a <b>Front-End Web Developer, Tabletop Game Designer, and C++ Programmer</b> who enjoys building practical, hands-on projects.</p>
-            <p>I started in game design with Unreal Engine and Blueprints, where I learned to create interactive systems and dynamic experiences. Now, I’m working toward becoming a full-stack developer—combining my coding knowledge with user-focused design to build responsive websites and applications.</p>
-            <p>One of my top achievements is successfully launching a tabletop game on Kickstarter. That process taught me a lot about project management, creative thinking, and what it takes to turn an idea into something real.</p>
-            <hr>
+    <section class="about-me">
+        <img src="https://placehold.co/250x300" alt="Photo of me">
+        <article class="about-description">
+            <p>I'm a Front-End Web Developer, Tabletop Game Designer, and C++ Programmer who enjoys building with code.</p>
+            <p>I started in game design with Unreal Engine and Blueprint Scripting, where I learned programming logic, and interactive design philosophies. Now, I'm working toward becoming a Full-Stack developer, combining my coding knowledge with user-focused design to build responsive websites and applications.</p>
+            <p>I still stick to my game design roots by designing Tabletop Games such as my fully funded Kickstarter project, Crabitat Combo. I am also learning C++, where I am experimenting with low level programming, and embedded systems.</p>
+        </article>
+        <div class="experience-container">
+            <section class="skills">
+                <h3>Skills</h3>
+                <div class="skills-container">
+                    <section class="skills-items">
+                        <div class="skill">C++</div>
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">Javascript</div>
+                    </section>
+                    <section class="skills-items">
+                        <div class="skill">GitHub</div>
+                        <div class="skill">Git CLI</div>
+                        <div class="skill">Perforce</div>
+                        <div class="skill">Linux</div>
+                    </section>
+                    <section class="skills-items">
+                        <div class="skill">Photoshop</div>
+                        <div class="skill">Production</div>
+                        <div class="skill">Systems Design</div>
+                    </section>
+                    <section class="skills-items">
+                        <div class="skill">Crowdfunding</div>
+                        <div class="skill">Business Management</div>
+                    </section>
+                </div>
+            </section>
+            <section class="education">
+                <h3>Education</h3>
+                <p class="degree-name">Game Design B.S. | Full Sail University</p>
+                <p class="degree-dates">September 2020 - November 2022</p>
+                <br>
+                <p class="degree-name">Computer Science B.S. | Full Sail University</p>
+                <p class="degree-dates">April 2025 - Current</p>
+            </section>
         </div>
-        <div id="skills">
-            <h2>Skills</h2>
-            <div id="languages"><div class="skill">C++</div><div class="skill">HTML</div><div class="skill">CSS</div><div class="skill">JavaScript</div><div></div></div>
-            <div id="programming_tech"><div class="skill">Linux</div><div class="skill">Terminal</div><div class="skill">Github/Git CLI</div><div class="skill">Perforce</div><div class="skill">Vim</div></div>
-        </div>
-        <div id="education">
-            <h2>Education</h2>
-            <p class="degree_name">Game Design Bachelor of Science | Full Sail University</p>
-            <p class="grad_date">September 2020 - November 2022</p>
-
-            <p class="degree_name">Computer Science Bachelor | Full Sail University</p>
-            <p class="grad_date">April 2025 - Present</p>
-            <p></p>
-        </div>
+    </section>
+    <div class="about-arrow">
+        <p>About Me</p>
+        <i class="fas fa-angle-down"></i>
+        <i class="fas fa-angle-up"></i>
     </div>
-    <div id="about_arrow">
-            <i class="fa-solid fa-angle-down"></i>
-            <i class="fa-solid fa-angle-up"></i>
-            <p>About Me</p>
-            <i class="fa-solid fa-angle-up"></i>
-            <i class="fa-solid fa-angle-down"></i>
-    </div>
 
-    <div id="category_container">
-        <div class="category" id="web_dev">
-            <p class="category_head">Web Development</p>
-            <p class="description">3 Projects</p>
-            <div class="project" id="web_project1">
-                <p><b>Three Season Studios</b></p><br>
-                <div class="project_content">
-                    <img src="images/ThreeSeasonStudios.png" alt="Image of three season studios homepage">
-                    <div class="description_content">
-                        <p>This WIP website is designed to serve as the website for my indie tabletop game studio.</p>
-                        <p>The project incorporates javascript for a basic image carousel allowing you to cycle through images with arrows or radio buttons, while also having the images auto cycle every few seconds.</p>
-                        <a href="https://amaraza.github.io/ThreeSeasonStudios/" target="_blank"><button>Visit Website</button></a>
-
-                        <h3 class="tech_stack">Tech Stack</h3>
-                        <div class="stack_tags"><div>HTML</div><div>CSS</div><div>Javascript</div></div>
-                    </div>
-                </div>
+    <section class="project-cards">
+        <div class="project-container">
+            <div class="parent-section">
+                <h3>Web Development</h3>
+                <img src="https://placehold.co/400x300" alt="">
+                <i class="fas fa-angle-down"></i>
             </div>
-            <div class="project" id="web_project2">
-                <p><b>Hiking Site</b></p> <br>
-                <div class="project_content">
-                    <img src="images/HikingSite.png" alt="Image of hiking site homepage">
-                    <div class="description_content">
-                        <p>This website showcases photos and stats from a 2 day hiking trip I took.</p>
-                        <p>This project was my first introduction to CSS flex box, and also incorporates some basic Javascript to change the units for the statistics from Metric to Imperial.</p>
-                        <a href="https://amaraza.github.io/HikingSite/index.html" target="_blank"><button>Visit Website</button></a>
-                        <h3 class="tech_stack">Tech Stack</h3>
-                        <div class="stack_tags"><div>HTML</div><div>CSS</div><div>Javascript</div></div>
-                    </div>
-                </div>
+            <div class="collapsed-section">
+                <h3>Web Development</h3>
+                <img src="https://placehold.co/400x300" alt="">
+                <i class="fas fa-angle-down"></i>
             </div>
-            <div class="project" id="web_project3">
-                <p><b>Hangman</b></p><br>
-                <div class="project_content">
-                    <video src="images/Hangman.mp4" autoplay muted loop></video>
-                    <div class="description_content">
-                        <p>This website is a simple Hangman game. The game picks randomly from a list of words, and breaks it down into characters to compare against user input.</p>
-                        <p>This project was mostly Javascript fundamentals, and this was my first experience with DOM Manipulation.</p>
-                        <a href="https://amaraza.github.io/HikingSite/index.html" target="_blank"><button>Visit Website</button></a>
-                        <h3 class="tech_stack">Tech Stack</h3>
-                        <div class="stack_tags"><div>HTML</div><div>CSS</div><div>Javascript</div></div>
-                    </div>
-                </div>
+            <div class="collapsed-section">
+                <h3>Web Development</h3>
+                <img src="https://placehold.co/400x300" alt="">
+                <i class="fas fa-angle-down"></i>
             </div>
         </div>
-
-        <div class="category" id="tabletop">
-            <p class="category_head">Tabletop Games</p>
-            <p class="description">3 Projects</p>
-            <div class="project" id="tabletop_project1">
-                <p><b>Crabitat Combo</b></p><br>
-                <div class="project_content">
-                    <img src="images/ThreeSeasonStudios.png" alt="Image of Crabitat Combo homepage">
-                    <div class="description_content">
-                        <p>This project was a from scratch card game that took 2.5 years to go from paper prototype to a fully funded kickstarter</p>
-                        <p>I did the game design, playtesting, prototyping, balancing, and marketing. I commissioned an artist for logos and card art and someone to assist with marketing.</p>
-                        <a href="https://threeseasonstudios.com" target="_blank"><button>Visit Website</button></a>
-                        <h3 class="tech_stack">Skills</h3>
-                        <div class="stack_tags"><div>Photoshop</div><div>Excel</div><div>Marketing</div><div>Social Media</div><div>Layout Design</div><div>Design Proofing</div></div>
-                    </div>
-                </div>
+        <div class="project-container">
+            <div class="parent-section">
+                <h3>Tabletop Game</h3>
+                <img src="https://placehold.co/400x300" alt="">
+                <i class="fas fa-angle-down"></i>
             </div>
-            <div class="project" id="tabletop_project2">
-                <p><b>Dun-Dun-Dungeon</b></p><br>
-                <div class="project_content">
-                    <img src="images/ThreeSeasonStudios.png" alt="Image of Crabitat Combo homepage">
-                    <div class="description_content">
-                        <p>This project was a part of a Systems Design class where over a month we had to design a game using only pieces players could find around their house, and it had to fit on one page of paper. One side for the rules, one side for the board.</p>
-                        <p>During this project, we prototyped, gathered playtesting data, calculated probability, and tracked player turns. As an extension of the project, I created multiple ways to play the game fitting into the same restrictions for the expansions.</p>
-                        <a href="https://threeseasonstudios.com" target="_blank"><button>Visit Website</button></a>
-                        <h3 class="tech_stack">Skills</h3>
-                        <div class="stack_tags"><div>Excel</div><div>Data Tracking</div><div>Prototyping</div><div>Design Restrictions</div><div>A/B Testing</div><div>Probability</div></div>
-                    </div>
-                </div>
+            <div class="collapsed-section">
+                <h3>Tabletop Game</h3>
+                <img src="https://placehold.co/400x300" alt="">
+                <i class="fas fa-angle-down"></i>
             </div>
-            <div class="project" id="tabletop_project3">
-                <p><b>Meeple Ball</b></p><br>
-                <div class="project_content">
-                    <img src="images/ThreeSeasonStudios.png" alt="Image of Crabitat Combo homepage">
-                    <div class="description_content">
-                        <p>This project took a digital game that a group of game designers and I made for a class assignment, and turned it into a tabletop strategy board game. We had to stick close to the mechanics of our reference game.</p>
-                        <p>I was tasked with creating the rules, and implemented player movement similar to chess where each piece moves in certain directions for a certain number of spaces. I also designed a stamina system to represent the digital counterpart where stamina was exhausted by dashing.</p>
-                        <a href="https://threeseasonstudios.com" target="_blank"><button>Visit Website</button></a>
-                        <h3 class="tech_stack">Skills</h3>
-                        <div class="stack_tags"><div>Collaborative Work</div><div>Prototyping</div><div>Design Restrictions</div></div>
-                    </div>
-                </div>
+            <div class="collapsed-section">
+                <h3>Tabletop Game</h3>
+                <img src="https://placehold.co/400x300" alt="">
+                <i class="fas fa-angle-down"></i>
             </div>
         </div>
-
-        <div class="category" id="cpp">
-            <p class="category_head">C++ Development</p>
-            <p class="description">0 Projects</p>
+        <div class="project-container">
+            <div class="parent-section">
+                <h3>C++ Project</h3>
+                <img src="https://placehold.co/400x300" alt="">
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="collapsed-section">
+                <h3>C++ Project</h3>
+                <img src="https://placehold.co/400x300" alt="">
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="collapsed-section">
+                <h3>C++ Project</h3>
+                <img src="https://placehold.co/400x300" alt="">
+                <i class="fas fa-angle-down"></i>
+            </div>
         </div>
-    </div>
+    </section>
+
+
+
 </main>
 
 <script src="script.js"></script>
