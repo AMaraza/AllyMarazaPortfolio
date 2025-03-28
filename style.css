@@ -22,7 +22,7 @@ header {
     align-items: center;
     flex-direction: column;
     padding: 1.5em;
-    width: 45%;
+    width: 50%;
 }
 .contact{
     width: auto;
@@ -161,22 +161,19 @@ header {
 .parent-section{
     border: 2px solid;
     padding: 1em;
-    cursor: pointer;
+    cursor: default;
     animation: shrink 0.5s forwards;
     border-radius: 15px;
     margin: 2em;
 }
-.parent-section .fas.fa-angle-down{
-    display: block;
-    animation: fadeOut 0.5s forwards;
-    opacity: 0;
+.parent-section h3{
+    font-size: 1.5rem;
+}
+.parent-section img{
+    border-radius: 10px;
 }
 .parent-section:hover{
     animation: scale 0.5s forwards;
-}
-.parent-section:hover .fas.fa-angle-down{
-    animation: fadeIn 0.5s forwards;
-    opacity: 1;
 }
 .project-container:hover .collapsed-section{
     animation: fadeIn 0.5s forwards;
@@ -190,6 +187,9 @@ header {
     border-radius: 15px;
     margin: 2em;
     opacity: 0;
+}
+.collapsed-section img{
+    border-radius: 10px;
 }
 .collapsed-section .fas.fa-angle-down{
     display: block;
@@ -210,12 +210,12 @@ header {
         transform: scale(1);
     }
     to {
-        transform: scale(1.25);
+        transform: scale(1.1);
     }
 }
 @keyframes shrink{
     from{
-        transform: scale(1.25);
+        transform: scale(1.1);
     }
     to {
         transform: scale(1);
