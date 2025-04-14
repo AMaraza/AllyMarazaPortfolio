@@ -136,6 +136,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 .skill{
     padding: 0.5em;
@@ -150,7 +151,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
 }
-.project-container{
+.project-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -158,84 +159,65 @@ header {
     flex-direction: column;
     margin-top: 2rem;
 }
-.parent-section{
+.parent-section {
     border: 2px solid;
     padding: 1em;
     cursor: default;
-    animation: shrink 0.5s forwards;
     border-radius: 15px;
     margin: 2em;
+    background-color: white;
+    transition: transform 0.3s ease;
 }
-.parent-section h3{
+
+.parent-section h3 {
     font-size: 1.5rem;
 }
-.parent-section img{
+
+.parent-section img {
     border-radius: 10px;
 }
-.parent-section:hover{
-    animation: scale 0.5s forwards;
+
+.parent-section:hover {
+    transform: scale(1.1);
 }
-.project-container:hover .collapsed-section{
-    animation: fadeIn 0.5s forwards;
+
+.project-container:hover .collapsed-section {
     opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.collapsed-section{
+
+.collapsed-section {
     border: 2px solid;
     padding: 1em;
     cursor: pointer;
-    animation: shrink 0.5s forwards;
     border-radius: 15px;
     margin: 2em;
     opacity: 0;
+    background-color: white;
+    pointer-events: none;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.collapsed-section img{
+
+.collapsed-section:hover {
+    transform: scale(1.1);
+}
+
+.collapsed-section img {
     border-radius: 10px;
 }
-.collapsed-section .fas.fa-angle-down{
+
+.collapsed-section .fas.fa-angle-down {
     display: block;
-    animation: fadeOut 0.5s forwards;
     opacity: 0;
+    transition: opacity 0.3s ease;
 }
-.project-container:hover .collapsed-section:hover{
-    animation: scale 0.5s forwards;
 
-}
-.collapsed-section:hover .fas.fa-angle-down{
-    animation: fadeIn 0.5s forwards;
+.collapsed-section:hover .fas.fa-angle-down {
     opacity: 1;
-}
-
-@keyframes scale{
-    from{
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.1);
-    }
-}
-@keyframes shrink{
-    from{
-        transform: scale(1.1);
-    }
-    to {
-        transform: scale(1);
-    }
-}
-@keyframes fadeIn{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-@keyframes fadeOut{
-    from{
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-    }
+    border-top: 2px solid;
+    padding-top: 1em;
 }
 
 /* Project Info */
