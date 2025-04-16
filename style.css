@@ -4,7 +4,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/*Header Styling*/
+/* Header Styling */
 header {
     border: 2px solid;
     border-top-left-radius: 10px;
@@ -16,7 +16,8 @@ header {
     justify-content: center;
     align-items: center;
 }
-.personal-info{
+
+.personal-info {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,30 +25,35 @@ header {
     padding: 1.5em;
     width: 50%;
 }
-.contact{
+
+.contact {
     width: auto;
 }
+
 .contact p {
     font-size: 1.5rem;
     font-weight: normal;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
 }
-.contact .socials{
+
+.contact .socials {
     font-size: 4rem;
     text-align: left;
-    margin: .3em;
+    margin: 0.3em;
 }
-.personal-info h1{
+
+.personal-info h1 {
     font-size: 4rem;
 }
-.personal-info h3{
+
+.personal-info h3 {
     font-size: 1.5rem;
     font-weight: normal;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
 }
 
 /* About Section */
-.about-me{
+.about-me {
     width: 95%;
     margin: 0 auto;
     padding: 0;
@@ -61,23 +67,28 @@ header {
     border-left: 2px solid;
     border-right: 2px solid;
 }
-.about-me.active{
+
+.about-me.active {
     max-height: 1500px;
     padding: 1em;
 }
-.about-me img{
+
+.about-me img {
     border-radius: 10px;
     margin-right: 2em;
 }
-.about-description{
+
+.about-description {
     width: 50%;
 }
-.about-description p{
+
+.about-description p {
     text-align: left;
     padding: 0.5em;
     font-size: 1.3rem;
 }
-.about-arrow{
+
+.about-arrow {
     margin: 0 auto;
     width: 95%;
     border-left: 2px solid black;
@@ -89,21 +100,25 @@ header {
     text-align: center;
     cursor: pointer;
 }
-.about-arrow .fas.fa-angle-up{
+
+.about-arrow .fas.fa-angle-up {
     display: none;
 }
-.about-arrow .fas.fa-angle-up.active{
+
+.about-arrow .fas.fa-angle-up.active {
     display: block;
 }
-.about-arrow.fas.fa-angle-down{
+
+.about-arrow.fas.fa-angle-down {
     display: block;
 }
-.about-arrow .fas.fa-angle-down.active{
+
+.about-arrow .fas.fa-angle-down.active {
     display: none;
 }
 
 /* Skills & Education */
-.experience-container{
+.experience-container {
     width: 85%;
     display: flex;
     justify-content: center;
@@ -113,60 +128,89 @@ header {
     padding: 1em;
     text-align: center;
 }
-.experience-container h3{
+
+.experience-container h3 {
     font-size: 2rem;
 }
-.education{
+
+.education {
     width: 50%;
     border-left: 2px solid black;
 }
-.degree-name{
+
+.degree-name {
     font-size: 1.5rem;
 }
-.skills{
+
+.skills {
     width: 50%;
 }
-.skills-container{
+
+.skills-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
 }
-.skills-items{
+
+.skills-items {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
-.skill{
+
+.skill {
     padding: 0.5em;
     border: 1px solid black;
     margin: 0.5em;
     border-radius: 10px;
 }
 
-/* Collapsed Project Cards */
-.project-cards{
+/* Project Cards */
+.project-cards {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
 }
+
 .project-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    flex-direction: column;
     margin-top: 2rem;
+    width: 95%;
+    background-color: lightgray;
+    border-radius: 15px;
+    padding: 1em;
+    border: 2px solid;
+}
+.parent-cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 95%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1em;
 }
 .parent-section {
     border: 2px solid;
     padding: 1em;
-    cursor: default;
+    cursor: pointer;
     border-radius: 15px;
-    margin: 2em;
     background-color: white;
     transition: transform 0.3s ease;
+    width: 25%;
+    text-align: center;
+    display: inline-block;
+}
+
+.parent-section:hover {
+    transform: scale(1.05);
 }
 
 .parent-section h3 {
@@ -177,51 +221,28 @@ header {
     border-radius: 10px;
 }
 
-.parent-section:hover {
-    transform: scale(1.1);
-}
-
-.project-container:hover .collapsed-section {
-    opacity: 1;
-    pointer-events: auto;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.collapsed-section {
+/* Collapsed Section */
+.collapsed-section-web, .collapsed-section-tabletop, .collapsed-section-c{
     border: 2px solid;
-    padding: 1em;
-    cursor: pointer;
-    border-radius: 15px;
-    margin: 2em;
-    opacity: 0;
-    background-color: white;
-    pointer-events: none;
-    transform: scale(1);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.collapsed-section:hover {
-    transform: scale(1.1);
-}
-
-.collapsed-section img {
     border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+.collapsed-section-web:hover, .collapsed-section-tabletop:hover, .collapsed-section-c:hover {
+    background-color: #eaeaea;
+}
+#parent-web{
+    background-color: lightgreen;
+}
+#tabletop{
+    display: none;
+}
+#c{
+    display: none;
 }
 
-.collapsed-section .fas.fa-angle-down {
-    display: block;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.collapsed-section:hover .fas.fa-angle-down {
-    opacity: 1;
-    border-top: 2px solid;
-    padding-top: 1em;
-}
-
-/* Project Info */
-.project-expanded{
+/* Project Expanded Info */
+.project-expanded {
     display: none;
     width: 95%;
     background-color: white;
@@ -230,48 +251,56 @@ header {
     border-radius: 15px;
     z-index: 2;
 }
-.project-title h3{
+
+.project-title h3 {
     font-size: 3rem;
     text-align: center;
 }
-.skills-items-project{
+
+.skills-items-project {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 25%;
     margin: 0 auto;
 }
-.project-content{
+
+.project-content {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.project-content img{
+
+.project-content img {
     border-radius: 15px;
 }
-.project-stack{
+
+.project-stack {
     display: flex;
     flex-direction: column;
     margin-left: 2em;
 }
-.highlight-list{
+
+.highlight-list {
     font-size: 1.5rem;
 }
-.highlight-list li{
+
+.highlight-list li {
     padding: 0.5em;
 }
-.project-description{
+
+.project-description {
     padding: 2em;
     width: 85%;
     margin: 0 auto;
 }
-.project-description p{
+
+.project-description p {
     font-size: 1.5rem;
     margin: 1em;
 }
-.collapse{
-    text-align: center;
-    padding: 1em;
-    border-top: 2px solid;
-    cursor: pointer;
+
+/* Remove collapse button style */
+.collapse {
+    display: none;
 }
