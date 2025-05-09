@@ -110,7 +110,7 @@ header {
     font-size: 1.5rem;
     text-align: center;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
     border: 1px solid #5c6389;
     background-color: #23283a;
     box-shadow: 0 0 6px rgb(77, 208, 225);
@@ -247,11 +247,12 @@ header {
 .collapsed-section-web, .collapsed-section-tabletop, .collapsed-section-c{
     border: 2px solid #5c6389;
     border-radius: 10px;
+    transition: background-color 0.3s ease;
     background-color: #2d3142;
     cursor: pointer;
 }
 .collapsed-section-web:hover, .collapsed-section-tabletop:hover, .collapsed-section-c:hover {
-    background-color: #ff6e7f;
+    background-color: #5c6389;
     box-shadow: 0 4px 12px rgba(74, 203, 220, 0.34);
     transform: translateY(-4px);
 }
