@@ -3,10 +3,14 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body{
+    background-color: #1c1f2b;
+    color: #f0ece2;
+}
 
 /* Header Styling */
 header {
-    border: 2px solid;
+    border: 2px solid #5c6389;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 95%;
@@ -15,6 +19,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #23283a;
+    color: #f0ece2;
+    padding: 2em;
 }
 
 .personal-info {
@@ -37,9 +44,14 @@ header {
 }
 
 .contact .socials {
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: left;
-    margin: 0.3em;
+    margin: 0.5em;
+    text-decoration: none;
+    color: #f0ece2;
+}
+.contact .socials:hover{
+    color: #ff6e7f;
 }
 
 .personal-info h1 {
@@ -47,13 +59,14 @@ header {
 }
 
 .personal-info h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: normal;
     margin-bottom: 0.5em;
 }
 
 /* About Section */
 .about-me {
+    border-color: #5c6389;
     width: 95%;
     margin: 0 auto;
     padding: 0;
@@ -89,16 +102,21 @@ header {
 }
 
 .about-arrow {
+    color: #f0ece2;
     margin: 0 auto;
     width: 95%;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     font-size: 1.5rem;
     text-align: center;
     cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #5c6389;
+    background-color: #23283a;
+    box-shadow: 0 0 6px rgb(77, 208, 225);
+}
+.about-arrow:hover {
+    background-color: #5c6389;
 }
 
 .about-arrow .fas.fa-angle-up {
@@ -161,10 +179,12 @@ header {
 }
 
 .skill {
+    color: #cbd3e3;
     padding: 0.5em;
-    border: 1px solid black;
+    border: 1px solid;
     margin: 0.5em;
     border-radius: 5px;
+    background-color: #3a3f52;
 }
 
 /* Project Cards */
@@ -182,10 +202,9 @@ header {
     text-align: center;
     margin-top: 2rem;
     width: 95%;
-    background-color: lightgray;
+    color: #f0ece2;
     border-radius: 15px;
     padding: 1em;
-    border: 2px solid;
 }
 .parent-cards{
     display: flex;
@@ -196,18 +215,20 @@ header {
     margin-left: auto;
     margin-right: auto;
     padding: 0 1em;
+    color: #f0ece2;
+
 }
 .parent-section {
-    border: 2px solid;
+    border: 2px solid #5c6389;
     padding: 1em;
     cursor: pointer;
     border-radius: 15px;
-    background-color: white;
     transition: transform 0.3s ease;
     width: 25%;
     text-align: center;
     display: inline-block;
     box-shadow: 5px 5px 10px black;
+    background-color: #268e96;
 }
 
 .parent-section:hover {
@@ -224,16 +245,18 @@ header {
 
 /* Collapsed Section */
 .collapsed-section-web, .collapsed-section-tabletop, .collapsed-section-c{
-    border: 2px solid;
+    border: 2px solid #5c6389;
     border-radius: 10px;
-    background-color: white;
+    background-color: #2d3142;
     cursor: pointer;
 }
 .collapsed-section-web:hover, .collapsed-section-tabletop:hover, .collapsed-section-c:hover {
-    background-color: #eaeaea;
+    background-color: #ff6e7f;
+    box-shadow: 0 4px 12px rgba(74, 203, 220, 0.34);
+    transform: translateY(-4px);
 }
 #parent-web{
-    background-color: lightgreen;
+    background-color: #ff6e7f;
 }
 #tabletop{
     display: none;

@@ -41,25 +41,25 @@ parentWeb.addEventListener('click', e => {
     containerTabletop.style.display = 'none';
     containerC.style.display = 'none';
 
-    parentWeb.style.backgroundColor = "lightgreen";
-    parentTabletop.style.backgroundColor = "white";
-    parentC.style.backgroundColor = "white";
+    parentWeb.style.backgroundColor = "#ff6e7f";
+    parentTabletop.style.backgroundColor = "#268e96";
+    parentC.style.backgroundColor = "#268e96";
 });
 parentTabletop.addEventListener('click', e => {
     containerWeb.style.display = "none";
     containerTabletop.style.display = 'flex';
     containerC.style.display = 'none';
 
-    parentWeb.style.backgroundColor = "white";
-    parentTabletop.style.backgroundColor = "lightgreen";
-    parentC.style.backgroundColor = "white";
+    parentWeb.style.backgroundColor = "#268e96";
+    parentTabletop.style.backgroundColor = "#ff6e7f";
+    parentC.style.backgroundColor = "#268e96";
 });
 parentC.addEventListener('click', e => {
     containerWeb.style.display = "none";
     containerTabletop.style.display = 'none';
     containerC.style.display = 'flex';
 
-    parentWeb.style.backgroundColor = "white";
-    parentTabletop.style.backgroundColor = "white";
-    parentC.style.backgroundColor = "lightgreen";
+    parentWeb.style.backgroundColor = "#268e96";
+    parentTabletop.style.backgroundColor = "#268e96";
+    parentC.style.backgroundColor = "#ff6e7f";
 });
