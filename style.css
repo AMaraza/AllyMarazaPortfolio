@@ -164,7 +164,7 @@ header {
     padding: 0.5em;
     border: 1px solid black;
     margin: 0.5em;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 /* Project Cards */
@@ -207,6 +207,7 @@ header {
     width: 25%;
     text-align: center;
     display: inline-block;
+    box-shadow: 5px 5px 10px black;
 }
 
 .parent-section:hover {
