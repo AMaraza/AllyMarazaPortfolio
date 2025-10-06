@@ -36,6 +36,9 @@ header {
 .contact {
     width: auto;
 }
+.spacer {
+    width: 20%
+}
 
 .contact p {
     font-size: 1.5rem;
@@ -112,7 +115,7 @@ header {
     cursor: pointer;
     transition: background-color 0.3s ease;
     border: 1px solid #5c6389;
-    background-color: #23283a;
+    background-color: #268e96;
     box-shadow: 0 0 6px rgb(77, 208, 225);
 }
 .about-arrow:hover {
@@ -233,6 +236,7 @@ header {
 
 .parent-section:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 6px rgb(77, 208, 225);
 }
 
 .parent-section h3 {
@@ -256,14 +260,18 @@ header {
     box-shadow: 0 4px 12px rgba(74, 203, 220, 0.34);
     transform: translateY(-4px);
 }
-#parent-web{
+#parent-tabletop{
     background-color: #ff6e7f;
 }
-#tabletop{
+#web{
     display: none;
 }
 #c{
     display: none;
+}
+.project-image{
+    width: 400px;
+    height: 250px;
 }
 
 /* Project Expanded Info */
