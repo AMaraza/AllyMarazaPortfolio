@@ -35,7 +35,7 @@ header {
 }
 
 #main-project-image {
-    width: 500px;
+    width: 600px;
 }
 
 .skills-items {
@@ -147,6 +147,6 @@ a:visited{
 }
 
 .cimage-horizontal {
-    width: 700px;
-    height: 500px;
+    width: 600px;
+    height: 400px;
 }
