@@ -337,3 +337,13 @@ header {
 .collapse {
     display: none;
 }
+
+.project-link {
+    text-decoration: none;
+    color: white
+}
+
+.project-link:visited {
+    text-decoration: none;
+    color: white
+}
