@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif
+}
+header {
+    text-align: center;
+    padding-top: 1em;
+}
+#tabs {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+header h3 {
+    width: 50%;
+    border: 2px solid black;
+    padding: 0.5em;
+    margin-top: 1em;
+    cursor: pointer;
+}
+header h1 {
+    font-size: 3em;
+}
+header h2 {
+    font-size: 2em;
+}
+#spacer {
+    width: 16%;
+}
+#title {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+#name {
+    width: 33%;
+}
+#socials {
+    width: 15%;
+    font-size: 2em;
+    padding-top: 0.5em;
+}
+#socials h4 {
+    font-size: 0.5em;
+    border: none
+}
+#socials * {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 5px;
+}
