@@ -15,10 +15,14 @@ header {
 }
 header h3 {
     width: 50%;
-    border: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
     padding: 0.5em;
     margin-top: 1em;
     cursor: pointer;
+}
+#projects-tab, #resume-tab {
+    border-right: 2px solid black;
 }
 header h1 {
     font-size: 3em;
@@ -55,4 +59,52 @@ header h2 {
     cursor: pointer;
     border: 2px solid black;
     border-radius: 5px;
+}
+
+.project {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em;
+    padding-bottom: 1em;
+    align-items: center;
+    padding-top:1em;
+    border-radius: 5px;
+}
+.project img {
+    border-radius: 5px;
+    margin-left: 1em;
+    border: 2px solid black;
+}
+.project:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+.project h3, .project p {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.project h3 {
+    font-size: 1.5em;
+}
+.project-content{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.skills {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+.skill {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0.5em;
+    width: 10em;
+    text-align: center;
 }
