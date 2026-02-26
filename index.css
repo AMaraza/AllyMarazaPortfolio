@@ -30,7 +30,7 @@ header {
     justify-content: space-evenly;
 }
 #tabs a {
-    width: 100vw;
+    flex: 1;
     border-top: 2px solid var(--border);
     border-bottom: 2px solid var(--border);
     padding: 0.5em;
