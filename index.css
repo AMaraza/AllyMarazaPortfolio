@@ -30,12 +30,11 @@ header {
     justify-content: space-evenly;
 }
 #tabs a {
-    width: 50%;
+    width: 100%;
     border-top: 2px solid var(--border);
     border-bottom: 2px solid var(--border);
     padding: 0.5em;
     margin-top: 1em;
-    cursor: pointer;
 }
 #socials a{
     border: none;
@@ -94,24 +93,9 @@ a:visited {
 .active-tab, .active-tab h3{
     background-color: var(--primary-accent);
 }
-.active-tab:hover {
-    background-color: var(--accent-hover);
-
-}
-.active-tab:hover h3 {
-    background-color: var(--accent-hover);
-    color: black;
-}
-.inactive-tab:hover {
-    background-color: var(--accent-hover);
-}
-.inactive-tab:hover h3 {
-    background-color: var(--accent-hover);
-    color: black;
-}
 
 .project {
-    width: 65%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
