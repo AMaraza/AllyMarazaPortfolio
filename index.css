@@ -1,8 +1,24 @@
+:root {
+    --background: #0F172A;
+    --surface: #1E293B;
+    --elevated-surface: #263449;
+
+    --primary-text: #E2E8F0;
+    --secondary-text: #94A3B8;
+
+    --primary-accent: #3B82F6;
+    --accent-hover: #60A5FA;
+
+    --border: #334155;
+}
+
 * {
     padding: 0;
     margin:0;
     box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    color: var(--primary-text);
 }
 header {
     text-align: center;
@@ -13,16 +29,23 @@ header {
     display: flex;
     justify-content: space-evenly;
 }
-header h3 {
+#tabs a {
     width: 50%;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 2px solid var(--border);
+    border-bottom: 2px solid var(--border);
     padding: 0.5em;
     margin-top: 1em;
     cursor: pointer;
 }
+#socials a{
+    border: none;
+}
+#socials a:hover i{
+    color: black;
+    background-color: var(--accent-hover);
+}
 #projects-tab, #resume-tab {
-    border-right: 2px solid black;
+    border-right: 2px solid var(--border);
 }
 header h1 {
     font-size: 3em;
@@ -57,30 +80,56 @@ header h2 {
     padding-top: 0.2em;
     padding-bottom: 0.2em;
     cursor: pointer;
-    border: 2px solid black;
+    border: 2px solid var(--border);
     border-radius: 5px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+.active-tab, .active-tab h3{
+    background-color: var(--primary-accent);
+}
+.active-tab:hover {
+    background-color: var(--accent-hover);
+
+}
+.active-tab:hover h3 {
+    background-color: var(--accent-hover);
+    color: black;
+}
+.inactive-tab:hover {
+    background-color: var(--accent-hover);
+}
+.inactive-tab:hover h3 {
+    background-color: var(--accent-hover);
+    color: black;
 }
 
 .project {
-    width: 75%;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: space-evenly;
     margin-top: 1em;
     padding-bottom: 1em;
-    align-items: center;
+    align-items:center;
     padding-top:1em;
     border-radius: 5px;
+    background-color: var(--surface);
 }
 .project img {
     border-radius: 5px;
     margin-left: 1em;
-    border: 2px solid black;
+    border: 2px solid var(--border);
 }
-.project:hover {
-    background-color: gray;
-    cursor: pointer;
+.project * {
+    background-color: var(--surface);
 }
 .project h3, .project p {
     padding-top: 0.5em;
@@ -92,6 +141,7 @@ header h2 {
 .project-content{
     padding-left: 2em;
     padding-right: 2em;
+    line-height: 2em;
 }
 .skills {
     display: flex;
@@ -101,28 +151,54 @@ header h2 {
     margin-right: auto;
     margin-top: 1em;
     align-items: center;
+    color: var(--secondary-text);
 }
 .skills h3 {
     font-size: 2em;
 }
 .skill {
-    border: 2px solid black;
+    border: 2px solid var(--border);
     border-radius: 5px;
     padding: 0.3em;
     width: 10em;
     text-align: center;
     font-size: 0.8em;
     margin-left: 1em;
+    font-weight: bold;
+    background-color: var(--elevated-surface);
 }
 .play {
-    padding: 0.5em;
+    padding: 1em;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
     margin-top: 1em;
+    width: 25%;
+    font-weight: bold;
 }
 .right-align{
     display: flex;
     justify-content: right;
+}
+
+button {
+    border-radius: 5px;
+    background-color: var(--primary-accent) !important;
+    border: 2px solid var(--border);
+}
+button:hover {
+    background-color: var(--accent-hover) !important;
+    color: black;
+}
+
+#resume {
+    padding: 1em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    margin-top: 1em;
+    width: 50%;
+    font-weight: bold;
 }
