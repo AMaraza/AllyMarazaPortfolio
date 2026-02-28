@@ -218,6 +218,7 @@ button:hover {
     width: 40%;
     padding: 1em;
     line-height: 1.5em;
+    margin-right: 3em;
 }
 #section1 h3, #section2 h3, #section3 h3, #section4 h3{
     text-align: center;
@@ -261,4 +262,18 @@ button:hover {
 #return-home:hover h3 {
     background-color: var(--accent-hover);
     color: black;
+}
+.inner-project-content ul {
+    width: 40%;
+    padding: 2em;
+    margin-left:2em;
+}
+.inner-project-content li {
+    margin-bottom: 1em;
+    font-size: 1.3em;
+}
+
+.inner-project-content ul p {
+    margin-bottom: 0.5em;
+    font-size: 1.4em;
 }
