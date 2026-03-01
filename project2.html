@@ -35,13 +35,13 @@
         </div>
         <section class="inner-project-content active-content">
             <div id="proj-images">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/NGDooxCA2Qo?si=2Zl2KL006-1F76qr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6rtdJyiRdtY?si=vyMlKZMpsOd_Arso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </div>
             <ul>
                 <p><strong>Section Summary</strong><p>
                 <li>Learned Lua and Pico 8 in a limited time period for a game jam.</li>
                 <li>Quickly picked up on Pico 8's Init, Update, and Draw cycles as well as sprite rendering and key inputs necessary to make a game loop.</li>
                 <li>Leveraged the game jam's theme both in what the player does in the game, and how the player feels while playing the game.</li>
+                <a href="https://ally-maraza.itch.io/pressure-keeper" target="_blank"><button>Play on Itch.io</button></a>
             </ul>
             <div id="section1">
                 <h3>Learning Pico 8 & The Game Jam</h3>
@@ -49,17 +49,18 @@
                 <p>From the time I joined the jam to the submission deadline was about five days. I spent the first two days learning the editor by following Space Cat’s YouTube tutorial series. During that time, I learned the fundamentals of Lua, how Pico-8 handles its update and draw loops, how to work with the sprite system, and how to create sound effects using the built-in audio tools.</p>
                 <p>The theme of the jam was “Under Pressure,” which I interpreted literally by creating an arcade-style game about managing pressure in aging, unstable pipes. The core mechanic focused on balancing and repairing the system, while the rapidly increasing difficulty curve was designed to put the player themselves under pressure, reinforcing the theme through gameplay.</p>
             </div>
-            <img src="images/Spreadsheet.png">
+            <img src="images/Pico8Map.png">
         </section>
         <section class="inner-project-content inactive-content">
             <div id="proj-images">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/NGDooxCA2Qo?si=2Zl2KL006-1F76qr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <img src="images/Pico8CodeSnippet.png">
             </div>
             <ul>
                 <p><strong>Section Summary</strong><p>
                 <li>Learned to write modular, cleaner code through Pico 8's artificial limitation on how much code you can write.</li>
                 <li>Adapted to Lua's limitations, often using tables to represent objects and classes creating reusable code.</li>
                 <li>Pico 8's built in sprite editor and limited color palette bred experimentation and creativity in my game art.</li>
+                <a href="https://ally-maraza.itch.io/pressure-keeper" target="_blank"><button>Play on Itch.io</button></a>
             </ul>
             <div id="section2">
                 <h3 id="section-sum">Limitations of Pico 8 and Lua Peaked my Creativity and Problem Solving</h3>
@@ -68,17 +69,18 @@
                 <p>I adapted to Lua’s minimal structure, primarily by leveraging tables. Lua tables can function similarly to objects in JavaScript, which allowed me to create a lightweight pseudo-class system. Core game entities such as pipes, the player, pressure wheels, and particle emitters were all represented as tables with shared variables and behaviors, reducing complexity while keeping the code organized.</p>
                 <p>As someone who primarily focuses on programming, I don’t usually emphasize game art. However, Pico-8’s limited color palette and integrated sprite editor encouraged me to approach art more creatively. Working within a fixed set of 16 colors and a constrained resolution helped me better understand sprite sizing, visual clarity, and shading, all without relying on external tools.</p>
             </div>
-            <img src="images/Spreadsheet.png">
+            <img src="images/Pico8SpriteEditor.png">
         </section>
         <section class="inner-project-content inactive-content">
             <div id="proj-images">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/NGDooxCA2Qo?si=2Zl2KL006-1F76qr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <img src="images/Particles.png">
             </div>
             <ul>
                 <p><strong>Section Summary</strong><p>
                 <li>Wrote a custom collision system using rectangular overlap.</li>
                 <li>Wrote a delay function using frame count and booleans.</li>
                 <li>Wrote a particle system combining Lua tables with loops.</li>
+                <a href="https://ally-maraza.itch.io/pressure-keeper" target="_blank"><button>Play on Itch.io</button></a>
             </ul>
             <div id="section3">
                 <h3>Built Core Game Systems Such as Collisions From Scratch</h3>
@@ -86,7 +88,7 @@
                 <p>The collision system used a simple rectangular overlap check, comparing the x and y bounds of two objects and returning a true or false result. The delay function I created accepted a frame duration, a condition, and a timer variable. The timer would increment each frame and, once it reached the specified duration, the condition would trigger, allowing me to control timed behaviors throughout the game.</p>
                 <p>The particle system was more involved. Each particle was represented as a Lua table containing position and lifespan values. In Pressure Keeper, particles were primarily used to simulate steam escaping from broken pipes. When a pipe broke, it would continuously spawn new particle tables into a parent list, and each particle would update and expire independently. This approach created a dynamic visual effect while remaining lightweight enough to fit within Pico-8’s constraints.</p>
             </div>
-            <img src="images/Spreadsheet.png">
+            <img src="images/CollisionWait.png">
         </section>
     </main>
 </body>

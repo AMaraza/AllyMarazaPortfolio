@@ -277,3 +277,10 @@ button:hover {
     margin-bottom: 0.5em;
     font-size: 1.4em;
 }
+
+.inner-project-content button{
+    padding: 1em;
+    width: 30%;
+    font-weight: bold;
+    cursor: pointer;
+}
