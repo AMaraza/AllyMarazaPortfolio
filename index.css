@@ -53,7 +53,7 @@ header h2 {
     font-size: 2em;
 }
 #spacer {
-    width: 16%;
+    width:20%;
 }
 #title {
     display: flex;
@@ -65,7 +65,7 @@ header h2 {
     width: 33%;
 }
 #socials {
-    width: 15%;
+    width: 20%;
     font-size: 2em;
     padding-top: 0.5em;
 }
