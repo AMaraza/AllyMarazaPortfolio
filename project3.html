@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astromando</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/66ea6207f2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <div id="spacer">
+            </div>
+            <div id="name">
+                <h1>Ally Maraza</h1>
+                <h2>Game Systems Developer</h2>
+            </div>
+            <div id="socials">
+                <a href="https://www.linkedin.com/in/ally-maraza/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/AMaraza", target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:allymaraza@outlook.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <a href="Ally_Maraza_Resume.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i></a>
+            </div>
+        </div>
+        <div id="tabs">
+            <a href="index.html" id="return-home" class="active-tab"><h3>Return Home</h3></a>
+        </div>
+    </header>
+    <main>
+        <h2 class="proj-title">Astromando</h2>
+        <div id="project-tabs">
+            <a class="active-section" id="1"><h3>Unreal Engine and Collaboration</h3></a>
+            <a id="2"><h3>AI Design</h3></a>
+            <a id="3"><h3>Level Design</h3></a>
+        </div>
+        <section class="inner-project-content active-content">
+            <div id="proj-images">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lZcgeGtfjHQ?si=9iKDP7sOQmovBJIH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </div>
+            <ul>
+                <p><strong>Section Summary</strong><p>
+                <li>Used Blueprints in Unreal Engine to create a game over four months.</li>
+                <li>Used Perforce for version control, Confluence for documentation, and Jira for task tracking.</li>
+                <li>Worked with Game Artists to provide assets that fit well into our game's design and theme.</li>
+                <a href="https://team-burnout.itch.io/astromando" target="_blank"><button>Play on Itch.io</button></a>
+            </ul>
+            <div id="section1">
+                <h3>Using Unreal Engine's Systems & Collaboration With Others</h3>
+                <p>Astromando was a four month long project made in Unreal Engine 4. My teammates and I had a reference game, Risk of Rain 2, and worked together to build up our own Third Person Roguelike based on the likes of our reference game.</p>
+                <p>As a team of four, we needed reliable, and efficient ways to document our game, as well as assign, and track tasks during our two week sprints. For version control, we used Perforce as our version control platform as it has good compatability with Unreal Engine and large files. For documentation and task tracking, we used Confluence and Jira which have good integration with each other, and provided us everything we would need for our project scope.</p>
+                <p>For the first three months of our project, we relied heavily on placeholder assets, and programmer art. However, in month four we collaborated with Game Artists to produce 3d assets for our game. From them we received models and animations for our player, our teleporter, and certain enemy types. While a lot of our assets remained placeholder at the end of the project, the assets we did receive we managed to integrate well into the project.</p>
+            </div>
+            <img src="images/AstromandoGameplay.png">
+        </section>
+        <section class="inner-project-content inactive-content">
+            <div id="proj-images">
+                <img src="images/BTT.png">
+            </div>
+            <ul>
+                <p><strong>Section Summary</strong><p>
+                <li>Created an enemy AI system using Unreal Engine's behavior trees and blackboards.</li>
+                <li>Created a modular system by creating a base enemy AI, and making child blueprints based on that core enemy.</li>
+                <li>Created an enemy spawning system based on safe points on the map, and distance from the player.</li>
+                <a href="https://team-burnout.itch.io/astromando" target="_blank"><button>Play on Itch.io</button></a>
+            </ul>
+            <div id="section2">
+                <h3 id="section-sum">Creating a Modular AI System in Unreal Engine</h3>
+                <p>Using Unreal Engine's robust built in behvaior trees and blackboards, I was able to create a modular enemy AI for our project when combined with inheritence. The behavior trees allow the enemies to pathfind, and attack either with projectiles, or physically if close enough to the player.</p>
+                <p>The system I made was modular, with a base enemy supplying the basic functions and stats such as healh, on damage, and attack. The behavior trees themselves were generic, with a close, and a ranged variety that could then be modified if necessary for specific enemies or bosses.</p>
+                <p>The enemy spawning system was a combination of random generation, and constraints based on the player. Enemies would be given a radius based on the player's current location, and then we would use a function to get a random safe point in that radius. If there was a pit, a chest, teleporter, etc then an enemy would have to find another point to spawn.</p>
+            </div>
+            <img src="images/BossTree.png">
+        </section>
+        <section class="inner-project-content inactive-content">
+            <div id="proj-images">
+                <img src="images/Level1.png">
+            </div>
+            <ul>
+                <p><strong>Section Summary</strong><p>
+                <li>Created basic blockout designs for levels in our game.</li>
+                <li>Created unique level mechanics for each level that was created.</li>
+                <li>Follow project guidelines to ensure levels had safe locations for the portal, chests, and enemies to spawn.</li>
+                <a href="https://team-burnout.itch.io/astromando" target="_blank"><button>Play on Itch.io</button></a>
+            </ul>
+            <div id="section3">
+                <h3>Level Blockouts, Level Mechanics, and Design Guidelines</h3>
+                <p>Each person on the team contributed to the level design of our project, and I contributed two of our levels, although one would be left out of the final product. Each level was constructed out of either basic geometry or simple terrain to make blockmesh versions. While we received assets for the player, some enemies, and the telporter, the levels remained primarily blockmesh for the rest of the project.</p>
+                <p>Each level has a specific design mechanic. My first level has a laser-like zipline taking you from one end to the other allowing the player to quickly move across the map, access new areas, or escape dangerous situations. My second level had contained natural disasters that would randomly occur such as acid fog, or a meteor shower that would damage the player. However, we found that these mechanics and the level itself didn't quite fit with the rest so we decided to scrap it with a few others as well to ensure a good scope, and level progression.</p>
+                <p>We made sure as a team to set ourselves guidelines for designing our levels. These were open ended levels, not a point a to point b, and the content on each was procedurally generated. We often had to make design decisions to ensure that not only were the levels fitting for the style of gameplay, but also that we were able to make sure our procedural generation could work regardless of the level. So this meant making sure we had a few flat surfaces, and clean areas without many pits or objects that could get in the way of object spawning.</p>
+            </div>
+            <img src="images/Level2.png">
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
